@@ -1,0 +1,54 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<link rel="import" href="../polymer/polymer.html">
+<!--
+An element providing a solution to no problem in particular.
+
+Example:
+
+    <tpa-component></tpa-component>
+
+Example:
+
+    <tpa-component>
+      <h2>Hello tpa-component</h2>
+    </tpa-component>
+
+@demo demo/index.html
+-->
+<dom-module id="test-me">
+  <style>
+    :host {
+      display: block;
+      border: 1px solid blue;
+    }
+  </style>
+
+  <template>
+
+  </template>
+
+</dom-module>
+
+<script>
+(function () {
+ 'use strict';
+
+ Polymer({
+    is: 'test-me',
+    properties: {
+      amIDefined: 1
+    },
+    ready: function() {
+      this.textContent = "is defined: " + this.amIDefined;
+    }
+ });
+})();
+</script>
