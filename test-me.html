@@ -44,7 +44,11 @@ Example:
  Polymer({
     is: 'test-me',
     properties: {
-      amIDefined: 1
+      amIDefined: {
+        type: Boolean,
+        notify: true,
+        value: true
+      }
     },
     ready: function() {
       this.textContent = "is defined: " + this.amIDefined;
